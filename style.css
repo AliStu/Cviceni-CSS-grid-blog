@@ -26,6 +26,9 @@ body {
 	font-family: 'Alice', serif;
 	font-size: 18px;
 	line-height: 1.5;
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	gap: 40px;
 }
 
 h1,
@@ -36,8 +39,26 @@ h3 {
 	margin: 0;
 }
 
+h1, h2 {
+	color: #a3cb38;
+	grid-column: 2 / 4;
+}
+
 blockquote {
 	font-family: 'Kaushan Script', cursive;
 }
+
+.blog {
+	grid-column: 2 / -3;
+}
+
+.meta {
+	color: #b2bec3;
+}
+
+figcaption {
+	color: #b2bec3;
+}
+
 
 /* --------------------------------------------------- */
